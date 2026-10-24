@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Disable directory browsing
+  Options -Indexes
+  
+  # Deny access to sensitive files
+  <FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+
+  # Next.js Static Export Routing
+  # 1. If the requested URL is a file or directory that exists, serve it directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 2. If the URL does not have a trailing slash, and the .html file exists, serve the .html file
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*?)/?$ .html [L]
+
+  # 3. Handle 404s
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /404.html [L]
+</IfModule>

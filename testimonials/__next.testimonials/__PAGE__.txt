@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[77257,["/_next/static/chunks/fd1943cb2a727b38.js","/_next/static/chunks/df98a4fad0ebef0e.js"],"default"]
+3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"V6xJqEDmRCrCny-XtSwuo","rsc":["$","$1","c",{"children":[["$","$L2",null,{"testimonials":[{"author":"COO","role":"SaaS Startup","content":"UNSYNTAX.AI felt like an in-house team they understood our vision from day one.","image":"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200"},{"author":"CFO","role":"Retail Company","content":"Their operational insights saved us over $1M in costs last year.","image":"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200"},{"author":"CEO","role":"Manufacturing Firm","content":"They understood our goal and gave flexibility from day one.","image":"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200"}]}],[["$","script","script-0",{"src":"/_next/static/chunks/df98a4fad0ebef0e.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

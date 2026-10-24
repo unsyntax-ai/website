@@ -1,0 +1,241 @@
+{
+  "pages": {
+    "home": {
+      "hero": {
+        "title": "Hero Section",
+        "description": "Main hero banner with particle background",
+        "sections": {
+          "background": {
+            "type": "canvas",
+            "description": "Particle network animation (no image needed)"
+          }
+        }
+      },
+      "services": {
+        "title": "Services Carousel",
+        "description": "Service cards with rotating images",
+        "sections": {
+          "ai_consulting": {
+            "id": "01",
+            "title": "AI Consulting",
+            "image": "/extracted-images/image2.png",
+            "alt": "Abstract Liquid Blue",
+            "category": "service"
+          },
+          "automation_tools": {
+            "id": "02",
+            "title": "Automation Tools",
+            "image": "/extracted-images/image6.png",
+            "alt": "Dark Geometric Cubes",
+            "category": "service"
+          },
+          "mvp_development": {
+            "id": "03",
+            "title": "MVP Development",
+            "image": "/extracted-images/image5.png",
+            "alt": "Abstract Tech Lines",
+            "category": "service"
+          }
+        }
+      },
+      "strategic_core": {
+        "title": "Strategic Core Section",
+        "description": "Cards showcasing strategic capabilities",
+        "sections": {
+          "card_1": {
+            "title": "Strategic Planning",
+            "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+            "alt": "Strategic Planning",
+            "category": "strategic"
+          },
+          "card_2": {
+            "title": "Technology Stack",
+            "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+            "alt": "Technology Stack",
+            "category": "strategic"
+          },
+          "card_3": {
+            "title": "Team Collaboration",
+            "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+            "alt": "Team Collaboration",
+            "category": "strategic"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Testimonials Section",
+        "description": "Client testimonials with profile images",
+        "sections": {
+          "testimonial_1": {
+            "author": "Client Name 1",
+            "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+            "alt": "Client 1 Profile",
+            "category": "testimonial"
+          },
+          "testimonial_2": {
+            "author": "Client Name 2",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+            "alt": "Client 2 Profile",
+            "category": "testimonial"
+          },
+          "testimonial_3": {
+            "author": "Client Name 3",
+            "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+            "alt": "Client 3 Profile",
+            "category": "testimonial"
+          }
+        }
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio Pages",
+      "description": "Portfolio item images managed in portfolio_items.json",
+      "note": "Portfolio images are stored in portfolio_items.json with gallery arrays per project"
+    },
+    "services": {
+      "title": "Services Page",
+      "description": "Service detail pages",
+      "sections": {
+        "banner": {
+          "title": "Services Banner",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200",
+          "alt": "Services Banner",
+          "category": "banner"
+        },
+        "service_1": {
+          "title": "AI Consulting",
+          "image": "/extracted-images/image2.png",
+          "alt": "AI Consulting Service",
+          "category": "service_detail"
+        },
+        "service_2": {
+          "title": "Automation Tools",
+          "image": "/extracted-images/image6.png",
+          "alt": "Automation Tools Service",
+          "category": "service_detail"
+        },
+        "service_3": {
+          "title": "MVP Development",
+          "image": "/extracted-images/image5.png",
+          "alt": "MVP Development Service",
+          "category": "service_detail"
+        }
+      }
+    },
+    "about": {
+      "title": "About Us Page",
+      "description": "About page images",
+      "sections": {
+        "banner": {
+          "title": "About Banner",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200",
+          "alt": "About Us Banner",
+          "category": "banner"
+        },
+        "team": {
+          "title": "Team Section",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+          "alt": "Team Image",
+          "category": "team"
+        },
+        "company_culture": {
+          "title": "Company Culture",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
+          "alt": "Company Culture",
+          "category": "culture"
+        }
+      }
+    },
+    "careers": {
+      "title": "Careers Page",
+      "description": "Careers page images",
+      "sections": {
+        "banner": {
+          "title": "Careers Banner",
+          "image": "/extracted-images/image15.png",
+          "alt": "Careers Banner",
+          "category": "banner"
+        },
+        "benefits": {
+          "title": "Benefits Section",
+          "image": "/extracted-images/image10.png",
+          "alt": "Benefits",
+          "category": "benefits"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Page",
+      "description": "Contact page images",
+      "sections": {
+        "banner": {
+          "title": "Contact Banner",
+          "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200",
+          "alt": "Contact Banner",
+          "category": "banner"
+        }
+      }
+    },
+    "blog": {
+      "title": "Blog Pages",
+      "description": "Blog post images managed in blogs.csv",
+      "note": "Blog images are stored in blogs.csv with image_url field per post"
+    }
+  },
+  "global": {
+    "title": "Global Images",
+    "description": "Images used across multiple pages",
+    "sections": {
+      "logo": {
+        "title": "Site Logo",
+        "light": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=200",
+        "dark": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=200",
+        "alt": "UNSYNTAX.AI Logo",
+        "category": "branding"
+      },
+      "favicon": {
+        "title": "Favicon",
+        "image": "/app/icon.png",
+        "alt": "UNSYNTAX.AI Favicon",
+        "category": "branding"
+      },
+      "placeholder": {
+        "title": "Placeholder Image",
+        "image": "/placeholder.jpg",
+        "alt": "Placeholder",
+        "category": "utility"
+      },
+      "placeholder_user": {
+        "title": "Placeholder User Avatar",
+        "image": "/placeholder-user.jpg",
+        "alt": "Placeholder User",
+        "category": "utility"
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2024-02-18",
+    "description": "Centralized image configuration for all pages and sections. Update image URLs here to change them across the site.",
+    "usage_instructions": [
+      "1. Locate the page you want to update in the 'pages' object",
+      "2. Find the section within that page",
+      "3. Update the 'image' URL with your new image",
+      "4. Update the 'alt' text for accessibility",
+      "5. Save the file and the changes will be reflected on the site",
+      "6. For portfolio and blog images, refer to portfolio_items.json and blogs.csv respectively"
+    ],
+    "image_categories": {
+      "banner": "Full-width page banners",
+      "service": "Service card images",
+      "service_detail": "Service detail page images",
+      "strategic": "Strategic core section cards",
+      "testimonial": "Client testimonial profile images",
+      "team": "Team member images",
+      "culture": "Company culture images",
+      "benefits": "Benefits section images",
+      "branding": "Logo and branding assets",
+      "utility": "Placeholder and utility images"
+    }
+  }
+}
