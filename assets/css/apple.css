@@ -1,0 +1,32 @@
+/* Apple-style refinements, loaded after the compiled site CSS.
+   `html:not(#a)` makes each rule win over the compiled utility classes, which are single-class selectors. */
+
+html:not(#a) { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+
+/* Lighter weights: Apple leans on 400/500/600, not 700-900 */
+html:not(#a) .font-black, html:not(#a) .font-extrabold { font-weight: 700; }
+html:not(#a) .font-bold { font-weight: 600; }
+html:not(#a) .font-semibold { font-weight: 500; }
+html:not(#a) .font-medium { font-weight: 400; }
+
+/* Calmer tracking on small caps labels and buttons */
+html:not(#a) .tracking-widest, html:not(#a) .tracking-wider, html:not(#a) [class*="tracking-["] { letter-spacing: .06em; }
+
+/* Headings: easier line spacing, gentle negative tracking */
+html:not(#a) main h1 { line-height: 1.05; letter-spacing: -.025em; font-weight: 600; text-wrap: balance; }
+html:not(#a) main h2 { line-height: 1.1; letter-spacing: -.022em; font-weight: 600; text-wrap: balance; }
+html:not(#a) main h3 { line-height: 1.15; letter-spacing: -.018em; font-weight: 600; }
+html:not(#a) main p { text-wrap: pretty; }
+
+/* Body copy: regular weight, comfortable measure */
+html:not(#a) main p.leading-relaxed { line-height: 1.5; letter-spacing: -.011em; }
+
+/* Navigation: sentence case, 13px, no wide tracking */
+html:not(#a) nav .uppercase { text-transform: none; letter-spacing: -.005em; font-size: 13px; }
+
+/* Buttons and links styled as buttons: sentence case, 17px */
+html:not(#a) a[class*="rounded-full"].uppercase, html:not(#a) button[class*="rounded-full"].uppercase { text-transform: none; letter-spacing: -.01em; font-weight: 500; }
+html:not(#a) a[class*="rounded-full"].uppercase.tracking-\[0\.2em\] { font-size: clamp(16px, 1.3vw, 19px); padding-block: 1rem; padding-inline: 2rem; }
+
+/* Stop the hero background canvas from causing sideways scrolling on phones */
+html:not(#a), html:not(#a) body { overflow-x: clip; }
