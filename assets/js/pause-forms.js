@@ -2,7 +2,7 @@
 // To turn the forms back on, remove the script tag for this file from the pages.
 (function () {
   var EMAIL = 'hello@unsyntax.ai';
-  var PHONE = ''; // e.g. '+1 555 123 4567'
+  var PHONE = '+1 913 608 8454';
 
   function note() {
     var p = document.createElement('p');
