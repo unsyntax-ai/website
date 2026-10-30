@@ -30,3 +30,41 @@ html:not(#a) a[class*="rounded-full"].uppercase.tracking-\[0\.2em\] { font-size:
 
 /* Stop the hero background canvas from causing sideways scrolling on phones */
 html:not(#a), html:not(#a) body { overflow-x: clip; }
+
+/* ---------- Motion ----------
+   Apple-style timing: colour changes ~200ms, movement 300-500ms on a long-tail ease-out,
+   nothing slower than 600ms, small hover lifts, gentle press feedback. */
+html:not(#a) {
+  --default-transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+  --default-transition-duration: .2s;
+}
+/* Moving things get 300ms by default (the compiled default of 150ms feels abrupt) */
+html:not(#a) :is(.transition-all, .transition-transform):not([class*="duration-"]) { transition-duration: .3s; }
+/* Long durations pulled in */
+html:not(#a) .duration-500 { --tw-duration: .4s; transition-duration: .4s; }
+html:not(#a) .duration-700 { --tw-duration: .5s; transition-duration: .5s; }
+html:not(#a) .duration-1000 { --tw-duration: .6s; transition-duration: .6s; }
+
+/* Hover lifts: 8px -> 4px, 6px -> 3px, 4px -> 2px */
+html:not(#a) .hover\:-translate-y-2:hover { --tw-translate-y: -4px; }
+html:not(#a) .hover\:-translate-y-1\.5:hover { --tw-translate-y: -3px; }
+html:not(#a) .hover\:-translate-y-1:hover { --tw-translate-y: -2px; }
+/* Image zoom on hover: 110% -> 106% */
+html:not(#a) .hover\:scale-110:hover,
+html:not(#a) .group-hover\:scale-110:is(:where(.group):hover *) { --tw-scale-x: 106%; --tw-scale-y: 106%; --tw-scale-z: 106%; }
+/* Press feedback: 95% -> 97% */
+html:not(#a) .active\:scale-95:active { --tw-scale-x: 97%; --tw-scale-y: 97%; --tw-scale-z: 97%; }
+
+/* Logo strip pauses when someone points at it */
+html:not(#a) [class*="animate-scroll"]:hover { animation-play-state: paused; }
+
+/* Respect the "reduce motion" setting */
+@media (prefers-reduced-motion: reduce) {
+  html:not(#a) *, html:not(#a) *::before, html:not(#a) *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html:not(#a) canvas.pointer-events-none { display: none; } /* decorative hero network background */
+}
