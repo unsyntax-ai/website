@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000" width="2000" height="2000">
+  <title>UNSYNTAX.AI</title>
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="120" result="wide"/>
+      <feComponentTransfer in="wide" result="wideSoft"><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="34" result="tight"/>
+      <feComponentTransfer in="tight" result="tightSoft"><feFuncA type="linear" slope="0.95"/></feComponentTransfer>
+      <feMerge><feMergeNode in="wideSoft"/><feMergeNode in="tightSoft"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="2000" height="2000" fill="#0084FF"/>
+  <g fill="#FFFFFF" filter="url(#glow)">
+    <polygon points="787,841 406,1006 406,1101 787,1268 787,1161 528,1054 787,947"/>
+    <polygon points="1213,841 1594,1006 1594,1101 1213,1268 1213,1161 1472,1054 1213,947"/>
+    <rect x="947" y="540" width="106" height="916"/>
+  </g>
+</svg>
